@@ -3,7 +3,7 @@
 모바일 프로그래밍 (팀프로젝트)
 
 # Image
-<img src = 'https://user-images.githubusercontent.com/94786383/143447639-ed78cf8d-36d8-4b1d-843f-dd976e00e346.png' width='200' height='400' >
+<img src = 'https://user-images.githubusercontent.com/94786383/143447639-ed78cf8d-36d8-4b1d-843f-dd976e00e346.png' width='360' height='640' >
 
 # Version 
 Android Studio Version 4.0.1    
