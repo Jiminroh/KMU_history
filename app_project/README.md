@@ -77,7 +77,7 @@ CPU/ABI - x86
  6. 친구추가하고 싶은 상대 정보를 저장   
 
 - 채팅기능 
- 1. Custom xml(listview_message.xml)을 만든다   
+    1. Custom xml(listview_message.xml)을 만든다   
  2. Adapter(MessageAdapter)를 생성한다   
  3. Adapter(MessageAdapter)에서 intent로 상대 아이디와 내 아이디를 넘겨줌   
  4. EighthActivity에서 리스트와 연결   
