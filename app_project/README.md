@@ -2,10 +2,10 @@
 대학교 2학년 2학기   
 모바일 프로그래밍 (팀프로젝트)
 
-# Image
+### Image
 <img src = 'https://user-images.githubusercontent.com/94786383/143447639-ed78cf8d-36d8-4b1d-843f-dd976e00e346.png' width='360' height='640' >
 
-# Version 
+### Version 
 Android Studio Version 4.0.1    
 AVD :    
 Name - Pixel 2 API 29    
@@ -14,7 +14,7 @@ Api - 29
 Target - Android 10.0 (Google play)    
 CPU/ABI - x86   
 
-# Code
+### Code
 - JAVA
     - MainActivity.java (로그인 페이지)   
     - SecondActivity.java (회원가입 페이지)    
@@ -49,8 +49,7 @@ CPU/ABI - x86
     - listview_message (activity_eighth lisview에 들어갈 custom xml)   
     - listview_msg (activity_seventh lisview에 들어갈 custom xml)   
 
-# 주요기능
-
+### 주요기능
 - 로그인 기능    
     1. ID 와 PW의 EditerText의 값을 받아 온 후 String 값에 저장한다.   
     2. firebase에 있는 회원정보들을 가져온 후 ID값만 추출한다.   
