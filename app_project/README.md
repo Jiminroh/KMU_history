@@ -1,6 +1,6 @@
 # APP_project
-# 대학교 2학년 2학기
-# 모바일 프로그래밍 (과제)
+### 대학교 2학년 2학기
+### 모바일 프로그래밍 (팀프로젝트)
 
 # Version 
 Android Studio Version 4.0.1    
@@ -12,7 +12,7 @@ Target - Android 10.0 (Google play)
 CPU/ABI - x86   
 
 # Code
-<JAVA>
+- JAVA
 * MainActivity.java (로그인 페이지)   
 * SecondActivity.java (회원가입 페이지)    
 * ThirdActivity.java (종 종류, 선택위치별 선택 페이지)   
@@ -31,7 +31,7 @@ CPU/ABI - x86
 * PopupActivity_2.java (개인정보정책)   
 * SearchActivity.java (아이디 중복검사)   
 
-<XML>
+- XML
 * activity_main (MainActivity의 xml)   
 * activity_second (SecondActivity의 xml)   
 * activity_third (ThirdActivity의 xml)   
@@ -46,7 +46,8 @@ CPU/ABI - x86
 * listview_message (activity_eighth lisview에 들어갈 custom xml)   
 * listview_msg (activity_seventh lisview에 들어갈 custom xml)   
 
-<주요기능>
+# 주요기능
+
 - 로그인 기능    
 1. ID 와 PW의 EditerText의 값을 받아 온 후 String 값에 저장한다.   
 2. firebase에 있는 회원정보들을 가져온 후 ID값만 추출한다.   
