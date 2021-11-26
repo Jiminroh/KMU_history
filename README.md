@@ -8,4 +8,5 @@
 |numerical analysis|2학년 1학기 과정|
 |mobile programming|2학년 2학기 과정|
 |c++|3학년 1학기 과정|
+|computer network|3학년 1학기 과정|
 |computer vision|3학년 2학기 과정|
