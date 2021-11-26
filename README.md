@@ -1,4 +1,4 @@
-# KMU_project
+# KMU_History
 국민대학교 과정 중 참여했던 과제 및 프로젝트
 
 ### List
