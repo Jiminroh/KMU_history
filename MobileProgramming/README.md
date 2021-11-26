@@ -7,7 +7,7 @@
 
 ### Version 
 Android Studio Version 4.0.1    
-AVD ->
+AVD ->   
     Name - Pixel 2 API 29    
     Resolution - 1080x1920: 420dpi   
     Api - 29   
