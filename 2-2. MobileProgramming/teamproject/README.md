@@ -1,6 +1,5 @@
 # APP_project
-대학교 2학년 2학기   
-모바일 프로그래밍 (팀프로젝트)
+강아지 친구만들기 어플(PET WORLD)
 
 ### Image
 <img src = 'https://user-images.githubusercontent.com/94786383/143447639-ed78cf8d-36d8-4b1d-843f-dd976e00e346.png' width='270' height='480' > <img src = 'https://user-images.githubusercontent.com/94786383/143530546-aba69a76-7693-4c13-8de2-550c5be59d73.png' width='270' height='480' > <img src = 'https://user-images.githubusercontent.com/94786383/143530540-28f736ea-e0c9-451c-94f3-0b285a654317.png' width='270' height='480' >
