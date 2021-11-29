@@ -1,6 +1,9 @@
 ## README   
 hough space를 생성 후 radius의 변화에 따라 일정 threshhold 이상 되는 점 생성
 
+### test image
+<img src = https://user-images.githubusercontent.com/94786383/143828700-c1fd13ab-651a-44a8-a832-de8707b5f0d2.png width='480' height='300'>
+
 ### STEP LOG
 1. 반지름의 변화를 최소 5부터 최대 영상의 width까지 수행    
 code -> for r in range(5, rows)   
