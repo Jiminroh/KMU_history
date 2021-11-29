@@ -1,0 +1,49 @@
+/*body의 css*/
+body{
+		background-color: darkgreen;
+	}
+/*h1의 css*/
+h1{
+	text-align: center;
+	color: white;
+}
+/*table의 css*/
+table{
+	background-color: rgb(206,255,137);
+	
+	position: absolute; 
+	top: 125px;
+	left: 165px;
+	width: 85%;
+	height: 80%;
+	margin: 10px;	
+}
+/*div의 css*/
+div{
+	background-color: white;
+	font-size: 20px;
+	font-weight:bolder;
+
+	width: 150px;		
+	margin: 2px;		
+	position: relative;
+	top: 40px;
+	left: 0px;	
+
+}	
+/*p의 css*/
+p{
+	position: absolute;
+	top: 280px;
+	left: 480px;
+	font-size: 100px;
+	color: darkred;
+	font-weight: bolder;
+	z-index: 1;
+	visibility: hidden;
+
+}
+/*img의 css*/
+img{
+	width: 70px;
+}
