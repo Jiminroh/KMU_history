@@ -5,3 +5,4 @@
 - morphology
 - interpolation
 - hough circle transform
+- face recognition using local binary pattern
