@@ -6,3 +6,4 @@
 - interpolation
 - hough circle transform
 - face recognition using local binary pattern
+- face recognition using pca
