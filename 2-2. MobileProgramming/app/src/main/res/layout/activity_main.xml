@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dog"
+    android:orientation="vertical"
+    android:weightSum="2560"> <!-- 총 레이아웃 세로 길이 2560 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1060"
+        android:gravity="center"
+        android:scrollbarTrackVertical="@android:color/background_dark"
+        android:weightSum="1440">  <!-- 총 레이아웃 가로 길이 1440 -->
+
+        <TextView
+            android:id="@+id/LoginImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:scrollbarTrackVertical="@android:color/holo_red_light"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="1.5"
+            android:text="PET WORLD"
+            android:textColor="#FFC107"
+            android:textColorHighlight="#000000"
+            android:textSize="60sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="160"
+        android:gravity="center"
+        android:weightSum="1440">
+
+
+        <EditText
+            android:id="@+id/LoginId"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1000"
+            android:background="#A39E8E"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:hint="아이디"
+            android:maxLength="10"
+            android:paddingLeft="15dp"
+            android:textColor="#000000"
+            android:textColorHint="@android:color/background_light"
+            android:textCursorDrawable="@android:color/background_light"
+            android:textSize="15dp" />
+
+        <requestFocus />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="160"
+        android:gravity="center"
+        android:weightSum="1440">
+
+
+        <EditText
+            android:id="@+id/LoginPw"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1000"
+            android:background="#A39E8E"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="15dp"
+            android:textColorHint="@android:color/background_light"
+            android:textCursorDrawable="@android:color/background_light"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="160"
+        android:gravity="center"
+        android:weightSum="1440">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1000"
+            android:background="#FFC107"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:onClick="onClick"
+            android:text="로그인"
+            android:textColor="#F4F3F3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="160"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:gravity="center_horizontal"
+            android:onClick="onClick"
+            android:text="아이디 • 비밀번호 찾기"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:onClick="onClick"
+            android:text="   /   "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:gravity="center_horizontal"
+            android:onClick="onClick"
+            android:text="회원가입"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

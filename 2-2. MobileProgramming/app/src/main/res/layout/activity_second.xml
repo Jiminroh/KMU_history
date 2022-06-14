@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarThumbHorizontal="@android:color/background_dark"
+    android:background="@drawable/background_color"
+    android:weightSum="2560">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="300"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:gravity="center_horizontal"
+            android:text="PET WORLD"
+            android:textAlignment="center"
+            android:textSize="33dp" />
+    </LinearLayout>
+
+    <!-- weightSum 12 끝 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1960"
+        android:orientation="vertical"
+        android:weightSum="1960">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="403dp"
+            android:layout_weight="1960">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1960"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="180"
+                    android:gravity="center"
+                    android:weightSum="1440">
+
+                    <EditText
+                        android:id="@+id/InputId"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="3.7dp"
+                        android:layout_weight="1300"
+                        android:background="@android:color/background_light"
+                        android:fontFamily="@font/nanumsquare_aceb"
+                        android:hint="아이디"
+                        android:maxLength="10"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+
+                    <requestFocus />
+                    <!-- 숫자만 입력 가능 -->
+                    <!-- 한줄 입력 -->
+                    <!-- 입력 글자 수 제한 -->
+                    <Button
+                        android:id="@+id/idcheck_button"
+                        android:layout_width="77dp"
+                        android:layout_height="58dp"
+                        android:layout_weight="1"
+                        android:text="중복검사" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="180"
+                    android:gravity="center"
+                    android:weightSum="1440">
+
+                    <EditText
+                        android:id="@+id/InputPw"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1300"
+                        android:background="@android:color/background_light"
+                        android:fontFamily="@font/nanumsquare_aceb"
+                        android:hint="비밀번호"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+                    <!-- 6~16자 영문 대 소문자, 숫자, 특수문자를 사용 -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="180"
+                    android:gravity="center"
+                    android:weightSum="1440">
+
+                    <EditText
+                        android:id="@+id/InputConfirmPw"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1300"
+                        android:background="@android:color/background_light"
+                        android:fontFamily="@font/nanumsquare_aceb"
+                        android:hint="비밀번호 확인"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+                    <!-- 6~16자 영문 대 소문자, 숫자, 특수문자를 사용 -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="140"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumsquare_aceb"
+                        android:text="▶ 8자 이상의 숫자와 영문, 특수문자 조합" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="180"
+                    android:gravity="center"
+                    android:weightSum="1440">
+
+                    <EditText
+                        android:id="@+id/InputName"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1300"
+                        android:background="@android:color/background_light"
+                        android:fontFamily="@font/nanumsquare_aceb"
+                        android:hint="펫 이름"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="180"
+                    android:gravity="center"
+                    android:weightSum="1440">
+
+                    <EditText
+                        android:id="@+id/InputKinds"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1300"
+                        android:background="@android:color/background_light"
+                        android:fontFamily="@font/nanumsquare_aceb"
+                        android:hint="종 이름"
+                        android:maxLength="6"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="180"
+                    android:gravity="center"
+                    android:weightSum="1400">
+
+                    <Spinner
+                        android:id="@+id/InputSize"
+                        style="@android:style/Widget.Spinner.DropDown"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1260"
+                        android:entries="@array/종"
+                        android:scrollbarStyle="insideOverlay"
+                        android:spinnerMode="dropdown"
+                        android:textSize="15dp"
+                        android:visibility="visible">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp"
+                    android:layout_weight="180"
+                    android:gravity="center"
+                    android:weightSum="1440">
+
+                    <EditText
+                        android:id="@+id/InputSubway"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1300"
+                        android:fontFamily="@font/nanumsquare_aceb"
+                        android:hint="거주지 중심 지하철역 옵션('ex.OO역')"
+                        android:maxLength="11"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="140">
+
+                    <CheckBox
+                        android:id="@+id/push_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:fontFamily="@font/nanumsquare_aceb"
+                        android:text="Push 알림에 동의합니다. (선택)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="140">
+
+                    <CheckBox
+                        android:id="@+id/inform_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:fontFamily="@font/nanumsquare_aceb"
+                        android:text="이용약관 및 사용자 정보제공에 동의합니다. (필수)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="140"
+                    android:orientation="horizontal"
+                    android:weightSum="1440">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1140"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/nanumsquare_aceb"
+                            android:text="이용약관" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="300"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/watch_btn1"
+                            android:layout_width="42dp"
+                            android:layout_height="25dp"
+                            android:background="@android:drawable/btn_star"
+                            android:fontFamily="@font/nanumsquare_aceb"
+                            android:text="보기"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="140"
+                    android:orientation="horizontal"
+                    android:weightSum="1440">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1140"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/nanumsquare_aceb"
+                            android:text="개인정보정책" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="300"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/watch_btn2"
+                            android:layout_width="50dp"
+                            android:layout_height="25dp"
+                            android:background="@android:drawable/btn_star"
+                            android:fontFamily="@font/nanumsquare_aceb"
+                            android:text="보기"
+                            android:textSize="10dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20sp">
+
+                    <ImageView
+
+                        android:id="@+id/user_image"
+                        android:layout_width="236dp"
+                        android:layout_height="134dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="200dp"
+                        android:maxHeight="200dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@android:drawable/ic_menu_gallery"
+
+                        />
+
+                    <Button
+
+                        android:id="@+id/btn_UploadPicture"
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="30dp"
+
+                        android:layout_gravity="center"
+
+                        android:layout_marginEnd="10dp"
+
+                        android:layout_marginRight="10dp"
+
+                        android:background="#FFC107"
+
+                        android:fontFamily="@font/nanumsquare_aceb"
+
+                        android:onClick="onClick"
+                        android:text="사진 선택"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="300"
+        android:gravity="center"
+        android:weightSum="1440">
+
+        <Button
+            android:id="@+id/Joinbtn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1300"
+            android:background="#FFC107"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:text="회원가입" />
+
+    </LinearLayout>
+
+</LinearLayout>
