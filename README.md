@@ -10,3 +10,5 @@
 |c++|3학년 1학기 과정|
 |computer network|3학년 1학기 과정|
 |computer vision|3학년 2학기 과정|
+|deep learning|4학년 1학기 과정|
+|vision ai|4학년 1학기 과정|
