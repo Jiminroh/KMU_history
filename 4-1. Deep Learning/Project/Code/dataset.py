@@ -133,18 +133,18 @@ class TACO_Dataset(Dataset):
         for ann in dataset['annotations']:
             ann['category_id'] = class_ids_map[ann['category_id']]
 
-if __name__ == '__main__':
-    import torch.utils
+# if __name__ == '__main__':
+#     import torch.utils
 
-    path = '.'
-    dataset = TACO_Dataset(path, 'train', 3)
+#     path = '.'
+#     dataset = TACO_Dataset(path, 'train', 3)
 
-    # image= dataset[0][0]
-    # boxes, mask, labels, area, iscrowd = dataset[0][1].values()
-    # print(image)
-    # print(mask)
+#     # image= dataset[0][0]
+#     # boxes, mask, labels, area, iscrowd = dataset[0][1].values()
+#     # print(image)
+#     # print(mask)
 
-    print(len(dataset))
+#     print(len(dataset))
 
     
     

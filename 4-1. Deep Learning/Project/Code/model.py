@@ -66,38 +66,38 @@ def mask_rcnn_2():
     )
     return model
 
-if __name__ == '__main__':
-    from torchvision.ops import nms
-    import numpy as np
-    # def decode_output(output):
-    #     'convert tensors to numpy arrays'
-    #     bbs = output['boxes'].cpu().detach().numpy().astype(np.uint16) # output의 bounding box
-    #     labels = np.array([i for i in output['labels'].cpu().detach().numpy()])
-    #     confs = output['scores'].cpu().detach().numpy() # output bounding box 의 confidence score
-    #     masks = output['masks'].cpu().detach().numpy()
+# if __name__ == '__main__':
+#     from torchvision.ops import nms
+#     import numpy as np
+#     # def decode_output(output):
+#     #     'convert tensors to numpy arrays'
+#     #     bbs = output['boxes'].cpu().detach().numpy().astype(np.uint16) # output의 bounding box
+#     #     labels = np.array([i for i in output['labels'].cpu().detach().numpy()])
+#     #     confs = output['scores'].cpu().detach().numpy() # output bounding box 의 confidence score
+#     #     masks = output['masks'].cpu().detach().numpy()
 
-    #     ixs = nms(torch.tensor(bbs.astype(np.float32)), torch.tensor(confs), 0.05) # nms 수행
+#     #     ixs = nms(torch.tensor(bbs.astype(np.float32)), torch.tensor(confs), 0.05) # nms 수행
 
-    #     bbs, confs, labels, masks = [tensor[ixs] for tensor in [bbs, confs, labels, masks]]
+#     #     bbs, confs, labels, masks = [tensor[ixs] for tensor in [bbs, confs, labels, masks]]
 
-    #     if len(ixs) == 1:
-    #         bbs, confs, labels, masks = [np.array([tensor]) for tensor in [bbs, confs, labels, masks]]
-    #     return bbs.tolist(), confs.tolist(), labels.tolist(), masks.tolist()
+#     #     if len(ixs) == 1:
+#     #         bbs, confs, labels, masks = [np.array([tensor]) for tensor in [bbs, confs, labels, masks]]
+#     #     return bbs.tolist(), confs.tolist(), labels.tolist(), masks.tolist()
 
-    # model = mask_rcnn()
-    # model.eval()
-    # x = [torch.rand(3, 300, 400)]
-    # outputs = model(x)
+#     # model = mask_rcnn()
+#     # model.eval()
+#     # x = [torch.rand(3, 300, 400)]
+#     # outputs = model(x)
     
-    # for ix, output in enumerate(outputs):
-    #     bbs, confs, labels, masks = decode_output(output)
+#     # for ix, output in enumerate(outputs):
+#     #     bbs, confs, labels, masks = decode_output(output)
     
-    model = mask_rcnn_2()
+#     model = mask_rcnn_2()
         
-    for name, param in model.named_parameters():
-        if name.split('.')[0] in ['backbone']:
-            pass
-        else:
-            param.requires_grad = False
-            print(name)
+#     for name, param in model.named_parameters():
+#         if name.split('.')[0] in ['backbone']:
+#             pass
+#         else:
+#             param.requires_grad = False
+#             print(name)
    
