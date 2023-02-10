@@ -98,24 +98,24 @@ class Warehouse_Dataset(Dataset):
 
 
     
-if __name__ == '__main__':
-    import torch.utils
-    from torch.utils.data import DataLoader
-    from utils import collate_fn
-    import torchvision
-    from utils import *
+# if __name__ == '__main__':
+#     import torch.utils
+#     from torch.utils.data import DataLoader
+#     from utils import collate_fn
+#     import torchvision
+#     from utils import *
 
-    path = '.'
-    mode = 'train'
+#     path = '.'
+#     mode = 'train'
 
-    transforms = Compose([
-        Resize((400, 400)),
-        ToTensor()
-    ])
+#     transforms = Compose([
+#         Resize((400, 400)),
+#         ToTensor()
+#     ])
 
-    dataset = Warehouse_Dataset(path, mode, transforms=None)
+#     dataset = Warehouse_Dataset(path, mode, transforms=None)
     
-    print(dataset[1])
+#     print(dataset[1])
     
     
     

@@ -20,16 +20,16 @@ def fcos(num_classes):
     )
     return model
 
-if __name__ == '__main__':
-    torch.manual_seed(0)
+# if __name__ == '__main__':
+#     torch.manual_seed(0)
     
-    model = fcos(3)
+#     model = fcos(3)
 
-    model.eval()
-    x = [torch.rand(3, 300, 400)]
-    predictions = model(x)
+#     model.eval()
+#     x = [torch.rand(3, 300, 400)]
+#     predictions = model(x)
     
-    boxes, scores, labels = predictions[0].values()
-    print(len(boxes))
-    print(len(scores))
-    print(len(labels))
+#     boxes, scores, labels = predictions[0].values()
+#     print(len(boxes))
+#     print(len(scores))
+#     print(len(labels))

@@ -59,36 +59,36 @@ class Helmet_Dataset(Dataset):
         return image, target
 
     
-if __name__ == '__main__':
-    import torch.utils
-    from torch.utils.data import DataLoader
-    from utils import collate_fn
-    import torchvision
-    from utils import *
+# if __name__ == '__main__':
+    # import torch.utils
+    # from torch.utils.data import DataLoader
+    # from utils import collate_fn
+    # import torchvision
+    # from utils import *
 
-    path = '.'
-    mode = 'train'
+    # path = '.'
+    # mode = 'train'
 
 
-    transforms = Compose([
-        Resize((400, 400)),
-        ToTensor()
-    ])
+    # transforms = Compose([
+    #     Resize((400, 400)),
+    #     ToTensor()
+    # ])
 
-    dataset = Helmet_Dataset(path, mode, transforms=transforms)
-    dataloader = DataLoader(
-        dataset=dataset,
-        batch_size=2,
-        shuffle=False,
-        collate_fn=collate_fn
-    )
-    from tqdm import tqdm
-    loop = tqdm(dataloader)
-    # device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    for i, (images, targets) in enumerate(loop):
-        print(images[0].shape)
-        print(targets)
-        break
+    # dataset = Helmet_Dataset(path, mode, transforms=transforms)
+    # dataloader = DataLoader(
+    #     dataset=dataset,
+    #     batch_size=2,
+    #     shuffle=False,
+    #     collate_fn=collate_fn
+    # )
+    # from tqdm import tqdm
+    # loop = tqdm(dataloader)
+    # # device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    # for i, (images, targets) in enumerate(loop):
+    #     print(images[0].shape)
+    #     print(targets)
+    #     break
     # data = dataset[1][0].shape
     # image = Image.open(file_name).convert('RGB')
     # print(data)
